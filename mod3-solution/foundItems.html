@@ -1,0 +1,7 @@
+<div class="row" style="padding-top: 80px;" ng-repeat="item in narrowctrl.foundItems">
+	<div class="jumbotron" style="color: white; background-color: #3399FF;">
+		<p style="font-size:22px";>{{item.name}} - {{item.short_name}} - {{item.description}}</p>
+		<button class="btn btn-lg" style="background-color: #99ff33;" ng-click="narrowctrl.onRemove({index: $index})">Don't want this one!</button>
+	</div>
+</div>
+<div class="alert alert-info" style="margin-top: 80px;" ng-show="narrowctrl.onEmpty">{{narrowctrl.onEmpty}}</div>
