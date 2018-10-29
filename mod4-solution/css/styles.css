@@ -1,0 +1,39 @@
+h1 {
+	color: #ff9999;
+	text-align: center;
+}
+span {
+	color: #ff9999;
+}
+ol {
+    background: #ff9999;
+    padding: 20px;
+    margin-left: 8px;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+li {
+    background: #ffe5e5;
+    margin: 2px;
+  	color: #9999ff;
+  	font-size: large;
+  	padding: 20px;
+}
+a {
+	color: 	#9999ff;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
