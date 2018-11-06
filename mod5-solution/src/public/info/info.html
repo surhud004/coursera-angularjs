@@ -1,0 +1,30 @@
+<div class="container">
+  
+  <div ng-if="infoCtrl.userPref === undefined" id="user-info-notfound-msg"> 
+    Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a>
+  </div>
+
+  <table id="user-info-table" ng-if="infoCtrl.userPref != undefined" class="table table-borderless">
+    <tr>
+      <td>First name: </td>
+      <td>{{infoCtrl.userPref.firstName}}</td>
+    </tr>
+    <tr>
+      <td>Last name: </td>
+      <td>{{infoCtrl.userPref.lastName}}</td>
+    </tr>
+    <tr>
+      <td>Email: </td>
+      <td>{{infoCtrl.userPref.email}}</td>
+    </tr>
+    <tr>
+      <td>Phone: </td>
+      <td>{{infoCtrl.userPref.phone}}</td>
+    </tr>
+    <tr>
+      <td>Favourite: </td>
+      <td><menu-item id="user-info-menu-item" menu-item="infoCtrl.userPref.favouriteDish"></menu-item></td>
+    </tr>
+  </table>
+
+</div>
